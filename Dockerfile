@@ -12,5 +12,5 @@ RUN echo "BACKSPACE='guess'" >> /etc/default/keyboard
 
 RUN apt-get install -y x2goserver x2goserver-xsession
 
-# CMD ["service x2goserver start; /usr/sbin/sshd -D"]
+CMD service x2goserver start && /usr/sbin/sshd -D
 
