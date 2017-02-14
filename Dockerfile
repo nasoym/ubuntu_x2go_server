@@ -1,8 +1,6 @@
 FROM nasoym/docker_ubuntu_sshd
 MAINTAINER Sinan Goo
 
-RUN apt-get install -y firefox libglu1-mesa x11-apps
-
 RUN echo "deb http://ppa.launchpad.net/x2go/stable/ubuntu xenial main" >> /etc/apt/sources.list
 RUN echo "deb-src http://ppa.launchpad.net/x2go/stable/ubuntu xenial main" >> /etc/apt/sources.list
 RUN apt-get install -y software-properties-common
